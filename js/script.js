@@ -48,7 +48,7 @@ jQuery("#frm").validate({
         number: "required",
         msg : {
             required : true,
-            minlength: 50,
+            minlength:10,
         },
         email : {
             required : true,
