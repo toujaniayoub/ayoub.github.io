@@ -860,6 +860,7 @@ span{
     .header {
         flex-direction: column;
         align-items: flex-start;
+        padding: 2rem 3%;
     }
     .navbar a {
         margin: 0.5rem 0;
@@ -879,7 +880,7 @@ span{
         text-align: center;
     }
     .home .profession-container {
-        display: block; /* Make it visible for smaller screens */
+        display: none; /* Make it visible for smaller screens */
         margin-top: 2rem; /* Add margin to suit mobile layout */
         position: relative;
         width: 100%;
@@ -887,7 +888,7 @@ span{
         overflow: hidden;
     }
     .home .profession-box {
-        display: flex;
+        display: none;
         justify-content: space-around;
         flex-wrap: wrap;
         position: relative;
