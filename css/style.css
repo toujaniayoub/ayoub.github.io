@@ -272,7 +272,7 @@ span{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 6rem 2rem;
+    padding-bottom: 6rem;
     gap: 2rem;
     background-color: #081b29;
     margin-top: 7.2rem;
@@ -286,7 +286,6 @@ span{
     justify-content: center;
     align-items: center;
 }
-
 .about-img img {
     width: 85%;
     border-radius: 50%;
