@@ -868,9 +868,11 @@ span{
     .home {
         flex-direction: column;
         text-align: center;
+        padding-top: 10rem;
     }
     .home .profession-container {
-        display: none; /* Hide for smaller screens */
+        display: block; /* Make it visible for smaller screens */
+        margin-top: 2rem; /* Add margin to suit mobile layout */
     }
     .portfolio .portfolio-container {
         grid-template-columns: 1fr 1fr;
@@ -882,6 +884,7 @@ span{
         grid-template-columns: 1fr;
     }
 }
+
 
 @media (max-width: 480px) {
     html {
