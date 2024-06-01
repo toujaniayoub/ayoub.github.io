@@ -862,6 +862,11 @@ span{
         align-items: flex-start;
         padding: 2rem 3%;
     }
+    .header .bx .bx-moon
+    {
+        /* put it on the right side */
+        margin-left: auto;
+    }
     .navbar a {
         display: none;
     
@@ -873,12 +878,14 @@ span{
         flex-direction: column;
         padding-bottom: 6rem;
         gap: 2rem;
-        background-color: #ffffff;
         margin-top: 7.2rem;
     }
     .home .home-content {
         padding-top: 2rem;
         text-align: center;
+    }
+    .home .home-content p {
+        font-size: 1.6rem;
     }
     .home .profession-container {
         display: none; /* Make it visible for smaller screens */
@@ -922,6 +929,11 @@ span{
         max-width: 300px;
         height: auto;
     }
+
+    .contact {
+        padding-top: 100px; /* Add padding to the top */
+    }
+
 }
 
 
