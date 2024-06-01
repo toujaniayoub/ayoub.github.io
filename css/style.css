@@ -868,20 +868,46 @@ span{
     .home {
         flex-direction: column;
         text-align: center;
-        padding-top: 10rem;
+    }
+    .home .home-content {
+        padding-top: 2rem;
     }
     .home .profession-container {
         display: block; /* Make it visible for smaller screens */
         margin-top: 2rem; /* Add margin to suit mobile layout */
+        position: relative;
     }
-    .portfolio .portfolio-container {
-        grid-template-columns: 1fr 1fr;
+    .home .profession-box {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        position: relative;
+        width: 100%;
+        transform: none;
     }
-    .team_container {
-        grid-template-columns: 1fr 1fr;
+    .home .profession {
+        position: static;
+        transform: none;
+        margin-bottom: 1rem;
     }
-    .faqs_container {
-        grid-template-columns: 1fr;
+    .home .profession i {
+        font-size: 2rem;
+    }
+    .home .profession h3 {
+        font-size: 1.5rem;
+    }
+    .home .profession-box .circle {
+        display: none; /* Hide the circle on smaller screens */
+    }
+    .home .profession-container .overlay {
+        display: none; /* Hide the overlay on smaller screens */
+    }
+    .home-img img {
+        position: static;
+        margin-top: 1rem;
+        width: 80%;
+        max-width: 300px;
+        height: auto;
     }
 }
 
