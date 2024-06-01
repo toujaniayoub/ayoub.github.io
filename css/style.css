@@ -863,7 +863,8 @@ span{
         padding: 2rem 3%;
     }
     .navbar a {
-        margin: 0.5rem 0;
+        display: none;
+    
     }
     .home {
         display: flex;
@@ -872,7 +873,7 @@ span{
         flex-direction: column;
         padding-bottom: 6rem;
         gap: 2rem;
-        background-color: #081b29;
+        background-color: #ffffff;
         margin-top: 7.2rem;
     }
     .home .home-content {
