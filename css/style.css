@@ -262,16 +262,17 @@ span{
     right: -10px;
     overflow: hidden;
     pointer-events: none;
+    max-width: 100%;
+    height: auto; 
+    
 }
-
-
 /* ============ About section =========== */
 .about {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-bottom: 6rem;
+    padding: 6rem 2rem;
     gap: 2rem;
     background-color: #081b29;
     margin-top: 7.2rem;
@@ -285,10 +286,13 @@ span{
     justify-content: center;
     align-items: center;
 }
+
 .about-img img {
     width: 85%;
     border-radius: 50%;
     border: 0.2rem solid var(--main-color);
+    max-width: 100%;
+    height: auto;
 }
 .about-img .circle-spin {
     position: absolute;
@@ -303,7 +307,7 @@ span{
     border-left: 0.2rem solid var(--main-color);
     border-right: 0.2rem solid var(--main-color);
     animation:  aboutRotate 6s ease-out infinite;
-
+    
 }
 @keyframes aboutRotate{
     0%{
@@ -816,9 +820,7 @@ span{
 
 
 
-
-/* Media Query */
-
+/* Media Queries */
 @media (max-width: 1200px){
     html {
         font-size: 55%;
@@ -842,17 +844,63 @@ span{
 }
 
 @media (max-width: 1024px){
-    .header{
+    .header {
         padding: 2rem 3%;
     }
     section {
         padding: 10rem 3% 2rem;
     }
     .home .profession-container .profession-box {
-        right:  -22rem;
+        right: -22rem;
     }
-    .home .profession-container .overlay{
+    .home .profession-container .overlay {
         right: -15rem;
     }
 }
 
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar a {
+        margin: 0.5rem 0;
+    }
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+    .home .profession-container {
+        display: none; /* Hide for smaller screens */
+    }
+    .portfolio .portfolio-container {
+        grid-template-columns: 1fr 1fr;
+    }
+    .team_container {
+        grid-template-columns: 1fr 1fr;
+    }
+    .faqs_container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 50%;
+    }
+    .header {
+        padding: 1rem 3%;
+    }
+    .home-content h1 {
+        font-size: 4rem;
+    }
+    .home-content p {
+        font-size: 1.4rem;
+    }
+    .portfolio .portfolio-container {
+        grid-template-columns: 1fr;
+    }
+    .team_container {
+        grid-template-columns: 1fr;
+    }
+}

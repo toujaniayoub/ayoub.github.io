@@ -101,3 +101,4 @@ ScrollReveal().reveal('.home-img img, .about-content, .education-row, .skills-ro
 
 ScrollReveal().reveal('.home-content h1', {origin: 'left'});
 ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', {origin: 'right'});
+
