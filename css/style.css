@@ -856,7 +856,6 @@ span{
         right: -15rem;
     }
 }
-
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
@@ -866,16 +865,26 @@ span{
         margin: 0.5rem 0;
     }
     .home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
-        text-align: center;
+        padding-bottom: 6rem;
+        gap: 2rem;
+        background-color: #081b29;
+        margin-top: 7.2rem;
     }
     .home .home-content {
         padding-top: 2rem;
+        text-align: center;
     }
     .home .profession-container {
         display: block; /* Make it visible for smaller screens */
         margin-top: 2rem; /* Add margin to suit mobile layout */
         position: relative;
+        width: 100%;
+        max-width: 768px;
+        overflow: hidden;
     }
     .home .profession-box {
         display: flex;
@@ -883,12 +892,14 @@ span{
         flex-wrap: wrap;
         position: relative;
         width: 100%;
+        height: auto;
         transform: none;
     }
     .home .profession {
         position: static;
         transform: none;
         margin-bottom: 1rem;
+        width: 100px; /* Adjust width as needed */
     }
     .home .profession i {
         font-size: 2rem;
