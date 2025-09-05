@@ -1,7 +1,7 @@
 // typed text animation
 
 const typed = new Typed('.multiple-text',{
-    strings: ['Web Developer', 'Backend Developer', 'Student'],
+    strings: ['BI Engineer', 'ML Enthusiast', 'AI Lover'],
     typeSpeed:120,
     backSpeed:120,
     backDelay:1300,
